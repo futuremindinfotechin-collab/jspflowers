@@ -1,1 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff8f4">
+  <title>JSP Florista | Flowers, Made Memorable</title>
+  <meta name="description" content="Fresh flowers, thoughtful bouquets and floral gifts by JSP Florista.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<!-- Announcement Bar -->
+<div class="announcement-bar">
+    <span>✿</span>
+    A LITTLE BEAUTY, DELIVERED WITH LOVE
+    <span class="announcement-divider">✦</span>
+    MADE FOR YOUR MOMENTS
+    <span>✿</span>
+</div>
 
+<!-- Modern Navbar -->
+<nav class="navbar jsp-navbar sticky-top">
+    <div class="container-fluid px-lg-5">
+
+        <!-- Left Hamburger -->
+        <button class="menu-trigger"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#jspSidebar"
+                aria-controls="jspSidebar"
+                aria-label="Open navigation menu">
+            <span class="menu-lines">
+                <span></span>
+                <span></span>
+            </span>
+            <small>MENU</small>
+        </button>
+
+        <!-- Brand -->
+        <a class="navbar-brand jsp-brand" href="#home">
+            <span class="brand-icon">✿</span>
+            <span class="brand-name">
+                JSP
+                <span>FLORISTA</span>
+                <small>FLOWERS • LOVE • MOMENTS</small>
+            </span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <div class="desktop-nav d-none d-lg-flex">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#collections" class="nav-link">Collections</a>
+            <a href="#about" class="nav-link">Our Story</a>
+            <a href="#reviews" class="nav-link">Kind Words</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+
+        <!-- Order Button -->
+        <a href="#contact" class="order-btn d-none d-md-inline-flex">
+            <span>Order Flowers</span>
+            <i class="bi bi-arrow-up-right"></i>
+        </a>
+
+    </div>
+</nav>
+
+<!-- Left Sliding Sidebar -->
+<div class="offcanvas offcanvas-start jsp-sidebar"
+     tabindex="-1"
+     id="jspSidebar"
+     aria-labelledby="jspSidebarLabel">
+
+    <div class="offcanvas-header">
+        <a href="#home" class="sidebar-brand" id="jspSidebarLabel">
+            <span>✿</span> JSP FLORISTA
+        </a>
+        <button type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body">
+
+        <div class="sidebar-intro">
+            <span>WELCOME TO JSP FLORISTA</span>
+            <h2>Flowers speak<br><i>what words cannot.</i></h2>
+            <p>Beautiful blooms, thoughtfully arranged for your special moments.</p>
+        </div>
+
+        <div class="sidebar-links">
+            <a href="#home" data-bs-dismiss="offcanvas">
+                <span>01</span> Home <i class="bi bi-arrow-up-right"></i>
+            </a>
+            <a href="#collections" data-bs-dismiss="offcanvas">
+                <span>02</span> Collections <i class="bi bi-arrow-up-right"></i>
+            </a>
+            <a href="#about" data-bs-dismiss="offcanvas">
+                <span>03</span> Our Story <i class="bi bi-arrow-up-right"></i>
+            </a>
+            <a href="#reviews" data-bs-dismiss="offcanvas">
+                <span>04</span> Kind Words <i class="bi bi-arrow-up-right"></i>
+            </a>
+            <a href="#contact" data-bs-dismiss="offcanvas">
+                <span>05</span> Contact <i class="bi bi-arrow-up-right"></i>
+            </a>
+        </div>
+
+        <a href="#contact" class="sidebar-order" data-bs-dismiss="offcanvas">
+            Let's Make Someone Smile <i class="bi bi-heart-fill"></i>
+        </a>
+
+        <div class="sidebar-social">
+            <span>FOLLOW OUR JOURNEY</span>
+            <a href="https://www.instagram.com/jsp.florista/" target="_blank" rel="noopener">
+                <i class="bi bi-instagram"></i> Instagram
+            </a>
+        </div>
+
+        <div class="sidebar-footer">
+            MADE WITH LOVE & FLOWERS ✿
+        </div>
+
+    </div>
+</div>
+
+
+  <main>
+    
+<section class="florista-hero" id="home">
+
+    <!-- Background Effects -->
+    <div class="hero-glow"></div>
+    <div class="hero-circle circle-one"></div>
+    <div class="hero-circle circle-two"></div>
+
+    <!-- Falling Flower Petals -->
+    <div class="petal-layer" aria-hidden="true">
+        <span class="fall-petal">🌸</span>
+        <span class="fall-petal">🌷</span>
+        <span class="fall-petal">✿</span>
+        <span class="fall-petal">❀</span>
+        <span class="fall-petal">🌸</span>
+        <span class="fall-petal">✿</span>
+        <span class="fall-petal">🌷</span>
+        <span class="fall-petal">❀</span>
+        <span class="fall-petal">🌸</span>
+        <span class="fall-petal">✿</span>
+        <span class="fall-petal">❀</span>
+        <span class="fall-petal">🌷</span>
+    </div>
+
+    <div class="container hero-content">
+        <div class="row align-items-center">
+
+            <!-- LEFT CONTENT -->
+            <div class="col-lg-6 hero-left">
+
+                <div class="hero-label">
+                    <span class="label-flower">✿</span>
+                    <span>THE ART OF BEAUTIFUL FLOWERS</span>
+                </div>
+
+                <h1 class="hero-heading">
+                    Every flower<br>
+                    tells a <em>beautiful</em><br>
+                    story.
+                </h1>
+
+                <p class="hero-description">
+                    More than just flowers, we create little moments
+                    of happiness. Discover thoughtfully designed
+                    bouquets made to make every occasion unforgettable.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#collections" class="hero-primary-btn">
+                        Explore Bouquets
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+
+                    <a href="#about" class="hero-secondary-btn">
+                        Discover Our Story
+                        <span>↗</span>
+                    </a>
+                </div>
+
+                <!-- Features -->
+                <div class="hero-features">
+                    <div>
+                        <i class="bi bi-flower1"></i>
+                        <span>Fresh Flowers</span>
+                    </div>
+
+                    <div>
+                        <i class="bi bi-heart"></i>
+                        <span>Made With Love</span>
+                    </div>
+
+                    <div>
+                        <i class="bi bi-gift"></i>
+                        <span>Perfect Gifting</span>
+                    </div>
+                </div>
+
+                <div class="hero-bottom-text">
+                    <span class="bottom-line"></span>
+                    BEAUTY IN EVERY PETAL
+                </div>
+
+            </div>
+
+            <!-- RIGHT BOUQUET VISUAL -->
+            <div class="col-lg-6 hero-right">
+
+                <div class="bouquet-stage">
+
+                    <!-- Decorative Circle -->
+                    <div class="bouquet-ring"></div>
+
+                    <!-- Decorative Flowers -->
+                    <div class="flower-decoration flower-top">✿</div>
+                    <div class="flower-decoration flower-bottom">❀</div>
+
+                    <!-- Main Bouquet Image -->
+                    <div class="bouquet-image-wrap">
+                        <img
+                            src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?auto=format&fit=crop&w=1100&q=90"
+                            class="bouquet-image"
+                            alt="Elegant pink and white flower bouquet"
+                            loading="eager">
+                    </div>
+
+                    <!-- Floating Glass Card -->
+                    <div class="bouquet-card">
+                        <div class="card-flower">✿</div>
+
+                        <div>
+                            <small>MADE WITH LOVE</small>
+                            <h4>Flowers for<br>every feeling.</h4>
+                        </div>
+                    </div>
+
+                    <!-- Floating Sticker -->
+                    <div class="bouquet-sticker">
+                        <span>✿</span>
+                        A LITTLE<br>HAPPINESS
+                    </div>
+
+                    <!-- Small Flowers -->
+                    <div class="mini-flower mini-one">✿</div>
+                    <div class="mini-flower mini-two">❀</div>
+                    <div class="mini-flower mini-three">✿</div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bottom Strip -->
+    <div class="hero-bottom-decoration">
+        <span>JSP FLORISTA</span>
+        <span>FLOWERS • LOVE • CELEBRATIONS</span>
+        <span>✿</span>
+    </div>
+
+</section>
+
+
+    <section class="section-pad" id="collections"><div class="container">
+      <div class="text-center mb-5 reveal"><div class="eyebrow mb-3">Find your kind of bloom</div><h2 class="section-title">Made for every <em style="color:var(--rose)">occasion.</em></h2><p class="section-sub mx-auto mt-3">A thoughtful collection for celebrations, heartfelt gestures and the joy of just because.</p></div>
+      <div class="row g-3">
+        <div class="col-md-4 reveal"><a class="category-card d-block" href="#contact"><img src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?auto=format&fit=crop&w=900&q=85" alt="Romantic red roses"><div class="category-label"><strong>Love & Romance</strong><i class="bi bi-arrow-up-right"></i></div></a></div>
+        <div class="col-md-4 reveal"><a class="category-card d-block" href="#contact"><img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=900&q=85" alt="Bright celebration flowers"><div class="category-label"><strong>Celebrations</strong><i class="bi bi-arrow-up-right"></i></div></a></div>
+        <div class="col-md-4 reveal"><a class="category-card d-block" href="#contact"><img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=900&q=85" alt="Pastel flower arrangement"><div class="category-label"><strong>Just Because</strong><i class="bi bi-arrow-up-right"></i></div></a></div>
+      </div>
+    </div></section>
+
+    <section class="section-pad pt-0"><div class="container">
+      <div class="d-flex justify-content-between align-items-end mb-4 reveal"><div><div class="eyebrow mb-2">The florist edit</div><h2 class="section-title mb-0">Our lovely <em style="color:var(--rose)">favourites.</em></h2></div><a href="#contact" class="btn btn-outline-rose d-none d-md-inline-flex">Enquire now <i class="bi bi-arrow-up-right ms-2"></i></a></div>
+      <div class="swiper productSwiper reveal"><div class="swiper-wrapper">
+        <div class="swiper-slide"><div class="product-card"><img class="product-img" src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?auto=format&fit=crop&w=800&q=85" alt="Pink rose bouquet"><div class="product-info"><span class="tag">Customer favourite</span><h3>Blush Romance</h3><div class="price">Enquire for price</div></div></div></div>
+        <div class="swiper-slide"><div class="product-card"><img class="product-img" src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=800&q=85" alt="Colorful flower bouquet"><div class="product-info"><span class="tag">Bright & joyful</span><h3>Sunshine Mix</h3><div class="price">Enquire for price</div></div></div></div>
+        <div class="swiper-slide"><div class="product-card"><img class="product-img" src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?auto=format&fit=crop&w=800&q=85" alt="White floral arrangement"><div class="product-info"><span class="tag">Elegant choice</span><h3>Pure Elegance</h3><div class="price">Enquire for price</div></div></div></div>
+        <div class="swiper-slide"><div class="product-card"><img class="product-img" src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=800&q=85" alt="Pink floral gift arrangement"><div class="product-info"><span class="tag">Made to impress</span><h3>Petal Celebration</h3><div class="price">Enquire for price</div></div></div></div>
+      </div><div class="swiper-pagination position-relative mt-4"></div><div class="swiper-button-prev"></div><div class="swiper-button-next"></div></div>
+    </div></section>
+
+    <section class="section-pad story" id="about"><div class="container"><div class="row align-items-center g-lg-5">
+      <div class="col-lg-6 reveal"><img class="story-img" src="https://images.unsplash.com/photo- florista" onerror="this.src='https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=1000&q=85'" alt="Florist arranging fresh flowers"></div>
+      <div class="col-lg-6 reveal"><div class="eyebrow mb-3">A little about us</div><h2 class="section-title mb-4">More than flowers.<br><em style="color:var(--rose)">A feeling.</em></h2><p class="section-sub">At JSP Florista, we believe the right flowers can turn an ordinary day into a memory. Every arrangement is an opportunity to share joy, express love and make someone feel special.</p><p class="section-sub">Tell us the occasion, the mood or simply the person you have in mind. We'll help you find the blooms that speak from the heart.</p><a href="#contact" class="btn btn-rose mt-3">Let's create something lovely <i class="bi bi-arrow-right ms-2"></i></a></div>
+    </div></div></section>
+
+    <section class="section-pad" id="reviews"><div class="container"><div class="text-center mb-5 reveal"><div class="eyebrow mb-3">Kind words</div><h2 class="section-title">A little love <em style="color:var(--rose)">from you.</em></h2><p class="section-sub mx-auto mt-3">The best part of what we do is being part of your special moments.</p></div>
+      <div class="row g-3"><div class="col-md-4 reveal"><div class="review-card"><div class="stars mb-3">★★★★★</div><p class="mb-4">“Beautiful flowers and such thoughtful presentation. It made the occasion extra special.”</p><strong class="small">A Happy Customer</strong></div></div><div class="col-md-4 reveal"><div class="review-card"><div class="stars mb-3">★★★★★</div><p class="mb-4">“The arrangement was lovely, fresh and exactly the kind of surprise I wanted.”</p><strong class="small">A Happy Customer</strong></div></div><div class="col-md-4 reveal"><div class="review-card"><div class="stars mb-3">★★★★★</div><p class="mb-4">“A lovely experience from enquiry to delivery. Will definitely order again.”</p><strong class="small">A Happy Customer</strong></div></div></div>
+    </div></section>
+
+    <section class="section-pad pt-0"><div class="container"><div class="d-flex justify-content-between align-items-end mb-4 reveal"><div><div class="eyebrow mb-2">Follow the petals</div><h2 class="section-title mb-0">A peek into our <em style="color:var(--rose)">world.</em></h2></div><a href="https://www.instagram.com/jsp.florista/" target="_blank" rel="noopener" class="btn btn-outline-rose"><i class="bi bi-instagram me-2"></i>Instagram</a></div>
+      <div class="row g-2"><div class="col-4 reveal"><a class="insta-tile d-block" href="https://www.instagram.com/jsp.florista/" target="_blank"><img src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?auto=format&fit=crop&w=500&q=80" alt="Florist Instagram inspiration"></a></div><div class="col-4 reveal"><a class="insta-tile d-block" href="https://www.instagram.com/jsp.florista/" target="_blank"><img src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?auto=format&fit=crop&w=500&q=80" alt="Rose bouquet"></a></div><div class="col-4 reveal"><a class="insta-tile d-block" href="https://www.instagram.com/jsp.florista/" target="_blank"><img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=500&q=80" alt="Colorful flowers"></a></div></div>
+    </div></section>
+
+    <section class="pb-5" id="contact"><div class="container"><div class="cta text-center reveal"><div class="eyebrow mb-3" style="color:#efb8bd">Your moment deserves flowers</div><h2 class="section-title text-white mb-3">Let's make someone's day.</h2><p class="text-white-50 mb-4">Have an occasion in mind? Get in touch and let's find your perfect flowers.</p><a class="btn btn-light rounded-pill px-4 py-3 fw-bold" href="https://www.instagram.com/jsp.florista/" target="_blank" rel="noopener">DM us on Instagram <i class="bi bi-instagram ms-2"></i></a></div></div></section>
+  </main>
+
+  <footer><div class="container"><div class="row g-4"><div class="col-lg-5"><a class="navbar-brand text-white mb-3" href="#home"><span class="brand-mark">✿</span>JSP FLORISTA</a><p class="mt-3" style="max-width:330px">Thoughtful blooms for all the moments that matter. Let every petal tell a story.</p><a class="social" href="https://www.instagram.com/jsp.florista/" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a class="social" href="#contact" aria-label="Contact"><i class="bi bi-chat-heart"></i></a></div><div class="col-6 col-lg-2"><h6 class="text-white mb-3">Explore</h6><p><a href="#home">Home</a><br><a href="#collections">Collections</a><br><a href="#about">Our Story</a><br><a href="#reviews">Reviews</a></p></div><div class="col-6 col-lg-2"><h6 class="text-white mb-3">Say hello</h6><p><a href="https://www.instagram.com/jsp.florista/" target="_blank">Instagram DM</a><br><a href="#contact">Enquiries</a></p></div><div class="col-lg-3"><h6 class="text-white mb-3">A note from us</h6><p>Fresh ideas, thoughtful details and flowers made to make you smile.</p></div></div><hr style="border-color:#5b4943"><div class="d-flex justify-content-between flex-wrap gap-2"><small style="color:#aa9992">© <span id="year"></span> JSP Florista. All rights reserved.</small><small style="color:#aa9992">Made with <i class="bi bi-heart-fill" style="color:#d88791"></i> for flower lovers</small></div></div></footer>
+
+  <nav class="mobile-bottom" aria-label="Mobile navigation">
+    <a href="#home" class="active"><i class="bi bi-house-heart"></i><span>Home</span></a>
+    <a href="#collections"><i class="bi bi-flower1"></i><span>Explore</span></a>
+    <a href="#about"><i class="bi bi-heart"></i><span>Our Story</span></a>
+    <a href="https://www.instagram.com/jsp.florista/" target="_blank" rel="noopener"><i class="bi bi-instagram"></i><span>Instagram</span></a>
+    <a href="#contact"><i class="bi bi-chat-dots"></i><span>Contact</span></a>
+  </nav>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    new Swiper('.productSwiper',{slidesPerView:1.25,spaceBetween:18,loop:true,grabCursor:true,autoplay:{delay:3000,disableOnInteraction:false},pagination:{el:'.swiper-pagination',clickable:true},navigation:{nextEl:'.swiper-button-next',prevEl:'.swiper-button-prev'},breakpoints:{576:{slidesPerView:2,spaceBetween:20},768:{slidesPerView:3,spaceBetween:24},1100:{slidesPerView:4,spaceBetween:26}}});
+    const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('show');observer.unobserve(entry.target)}}),{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+    const navLinks=document.querySelectorAll('.mobile-bottom a');
+    navLinks.forEach(link=>link.addEventListener('click',()=>{navLinks.forEach(x=>x.classList.remove('active'));link.classList.add('active')}));
+  </script>
+</body>
+</html>
